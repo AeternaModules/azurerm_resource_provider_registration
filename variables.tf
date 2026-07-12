@@ -11,10 +11,10 @@ EOT
 
   type = map(object({
     name = string
-    feature = optional(object({
+    feature = optional(list(object({
       name       = string
       registered = bool
-    }))
+    })))
   }))
 }
 
